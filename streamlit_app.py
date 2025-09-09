@@ -1,8 +1,10 @@
 import streamlit as st
 
-def runspecialeffects():
-    st.balloons()
+def makeitsnow():
     st.snow()
+
+def birthdayeffects():
+    st.balloons()
 
 st.title("🎈 My new app")
 st.write(
@@ -10,6 +12,9 @@ st.write(
 )
 st.write("This is a new line added to the app.")
 
-if st.button("Press me!"):
-    runspecialeffects()
+if st.button("Make it snow!"):
+    makeitsnow()
+
+if st.button("Celebrate my birthday!"):
+    birthdayeffects()
 
